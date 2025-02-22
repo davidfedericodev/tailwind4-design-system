@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+@theme {
+
+  /***********************/
+  /* Spacing */
+  /***********************/
+  --spacing-none: 0rem;
+  --spacing-xxs: 0.125rem;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.375rem;
+  --spacing-md: 0.5rem;
+  --spacing-lg: 0.75rem;
+  --spacing-xl: 1rem;
+  --spacing-2xl: 1.25rem;
+  --spacing-3xl: 1.5rem;
+  --spacing-4xl: 2rem;
+  --spacing-5xl: 2.5rem;
+  --spacing-6xl: 3rem;
+  --spacing-7xl: 4rem;
+  --spacing-8xl: 5rem;
+  --spacing-9xl: 6rem;
+  --spacing-10xl: 8rem;
+  --spacing-11xl: 10rem;
+
+  /***********************/
+  /* Border Radius */
+  /***********************/
+  --radius-none: 0rem;
+  --radius-xxs: 0.125rem;
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.625rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.25rem;
+  --radius-4xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /***********************/
+  /* Typography */
+  /***********************/
+
+  /*Font Family */
+  --font-sans: 'Inter',
+    sans-serif;
+  --font-serif: 'Merriweather',
+    serif;
+  --font-mono: 'Roboto Mono',
+    monospace;
+
+  /*Font sizes*/
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-display-sm: 1.5rem;
+  --text-display-md: 2.25rem;
+  --text-display-lg: 3rem;
+  --text-display-xl: 3.75rem;
+  --text-display-2xl: 4.5rem;
+
+
+  /***********************/
+  /* Colors */
+  /***********************/
+
+  /*Brand colors*/
+  --color-brand-25: #F5FEFF;
+  --color-brand-50: #ECFDFF;
+  --color-brand-100: #CFF9FE;
+  --color-brand-200: #A5F0FC;
+  --color-brand-300: #67E3F9;
+  --color-brand-400: #22CCEE;
+  --color-brand-500: #06AED4;
+  --color-brand-600: #088AB2;
+  --color-brand-700: #0E7090;
+  --color-brand-800: #155B75;
+  --color-brand-900: #164C63;
+  --color-brand-950: #0D2D3A;
+
+  /*Gray Colors*/
+  --color-gray-25: #FCFCFD;
+  --color-gray-50: #F9FAFB;
+  --color-gray-100: #F2F4F7;
+  --color-gray-200: #EAECF0;
+  --color-gray-300: #D0D5DD;
+  --color-gray-400: #98A2B3;
+  --color-gray-500: #667085;
+  --color-gray-600: #475467;
+  --color-gray-700: #344054;
+  --color-gray-800: #182230;
+  --color-gray-900: #101828;
+  --color-gray-950: #0C111D;
+
+  /*Error Colors*/
+  --color-error-25: #FFFBFA;
+  --color-error-50: #FEF3F2;
+  --color-error-100: #FEE4E2;
+  --color-error-200: #FECDCA;
+  --color-error-300: #FDA29B;
+  --color-error-400: #F97066;
+  --color-error-500: #F04438;
+  --color-error-600: #D92D20;
+  --color-error-700: #B42318;
+  --color-error-800: #912018;
+  --color-error-900: #7A271A;
+  --color-error-950: #55160C;
+
+  /*Warning Colors*/
+  --color-warning-25: #FFFCF5;
+  --color-warning-50: #FFFAEB;
+  --color-warning-100: #FEF0C7;
+  --color-warning-200: #FEDF89;
+  --color-warning-300: #FEC84B;
+  --color-warning-400: #FDB022;
+  --color-warning-500: #F79009;
+  --color-warning-600: #DC6803;
+  --color-warning-700: #B54708;
+  --color-warning-800: #93370D;
+  --color-warning-900: #7A2E0E;
+  --color-warning-950: #4E1D09;
+
+  /*Success Colors */
+  --color-success-25: #F6FEF9;
+  --color-success-50: #ECFDF3;
+  --color-success-100: #DCFAE6;
+  --color-success-200: #ABEFC6;
+  --color-success-300: #75E0A7;
+  --color-success-400: #47CD89;
+  --color-success-500: #17B26A;
+  --color-success-600: #079455;
+  --color-success-700: #067647;
+  --color-success-800: #085D3A;
+  --color-success-900: #074D31;
+  --color-success-950: #053321;
+
+  /*Gradient Colors*/
+  --gradient-01: 180deg, #A5C0EE 0%, #FBC5EC 100%;
+  --gradient-02: 180deg, #FBC2EB 0%, #A18CD1 105.25%;
+  --gradient-03: 180deg, #FFD1FF 0%, #FAD0C4 100%;
+  --gradient-04: 225deg, #FAD0C4 0%, #FF9A9E 100%;
+  --gradient-05: 225deg, #FAD0C4 0%, #FF9A9E 100%;
+  --gradient-06: 180deg, #FECFEF 0%, #FF989C 100%;
+  --gradient-07: 45deg, #FF9DE4 0%, #FFEAF6 100%;
+  --gradient-08: 180deg, #E6DEE9 0%, #FDCAF1 100%;
+  --gradient-09: 45deg, #A6C0FE 0%, #FFEAF6 100%;
+  --gradient-10: 0deg, #CFC7F8 0%, #EBBBA7 100%;
+  --gradient-11: 135deg, #FCCB90 0%, #D57EEB 100%;
+  --gradient-12: 45deg, #7B6AE0 0%, #FFBB89 100%;
+  --gradient-13: 135deg, #E0C3FC 0%, #8EC5FC 100%;
+  --gradient-14: 0deg, #FED6E3 0%, #A8EDEA 100%;
+  --gradient-15: 135deg, #F5F7FA 0%, #C3CFE2 100%;
+  --gradient-16: 45deg, #DFD1C5 0%, #FFF6EB 100%;
+  --gradient-17: 135deg, #FFF6B7 0%, #FB758A 100%;
+  --gradient-18: 45deg, #FF7EC7 0%, #FFED46 100%;
+  --gradient-19: 0deg, #FEAFA8 0%, #F5EFEF 100%;
+  --gradient-20: 45deg, #E9DEFA 0%, #FFF6EB 100%;
+  --gradient-21: 0deg, #FFF1EB 0%, #ACE0F9 100%;
+  --gradient-22: 0deg, #C1DFC4 0%, #DEECDD 100%;
+  --gradient-23: 45deg, #A1C4FD 0%, #C2E9FB 100%;
+  --gradient-24: 0deg, #ACCBEE 0%, #E7F0FD 100%;
+  --gradient-25: 0deg, #84FAB0 0%, #ACCBEE 100%;
+  --gradient-26: 45deg, #39A0FF 0%, #8FFF85 100%;
+  --gradient-27: 270deg, #74EBD5 0%, #9FACE6 100%;
+  --gradient-28: 45deg, #4A879A 0%, #C5EDF5 100%;
+  --gradient-29: 0deg, #9890E3 0%, #B1F4CF 100%;
+  --gradient-30: 45deg, #7CDADA 0%, #F697AA 100%;
+  --gradient-31: 45deg, #B1FF96 0%, #FFADF7 100%;
+  --gradient-32: 0deg, #96FBC4 0%, #F9F586 100%;
+  --gradient-33: 45deg, #4DEF8E 0%, #FFEB3A 100%;
+  --gradient-34: 135deg, #F0FF00 0%, #58CFFB 100%;
+  --gradient-35: 0deg, #D1FDFF 0%, #FDDB92 100%;
+  --gradient-36: 0deg, #EBC0FD 0%, #D9DED8 100%;
+  --gradient-37: 45deg, #FFA4F6 0%, #B7DCFF 100%;
+  --gradient-38: 0deg, #CD9CF2 -30.65%, #F6F3FF 100%;
+  --gradient-39: 315deg, #F5C8F5 0%, #DADDFA 83.85%;
+  --gradient-40: 0deg, #E6DEE9 0%, #BDC2E8 100%;
+  --gradient-41: 0deg, #6A85B6 0%, #BAC8E0 100%;
+  --gradient-42: 45deg, #8B8B8B 0%, #EAEAEA 100%;
+  --gradient-43: 135deg, #E2B0FF 0%, #9F44D3 100%;
+  --gradient-44: 135deg, #CE9FFC 0%, #7367F0 100%;
+  --gradient-45: 135deg, #72EDF2 0%, #5151E5 100%;
+  --gradient-46: 0deg, #A3BDED 0%, #6991C7 100%;
+  --gradient-47: 0deg, #FBC8D4 0%, #9795F0 100%;
+  --gradient-48: 0deg, #A7A6CB 0%, #8989BA 100%;
+  --gradient-49: 0deg, #D9AFD9 0%, #97D9E1 100%;
+  --gradient-50: 135deg, #81FFEF 0%, #F067B4 100%;
+  --gradient-51: 135deg, #DCB0ED 0%, #9999CC 100%;
+  --gradient-52: 135deg, #FFF5C3 0%, #9452A5 100%;
+  --gradient-53: 135deg, #F1CA74 0%, #A64DB6 100%;
+  --gradient-54: 45deg, #4D6AD0 0%, #FF9D7E 100%;
+  --gradient-55: 135deg, #FFCF71 0%, #2376DD 100%;
+  --gradient-56: 135deg, #E8D07A 0%, #5312D6 100%;
+  --gradient-57: 180deg, #BFD9FE 0%, #DF89B5 100%;
+  --gradient-58: 0deg, #FA71CD 0%, #C471F5 100%;
+  --gradient-59: 135deg, #43CBFF 0%, #9708CC 100%;
+  --gradient-60: 180deg, #7579FF 0%, #B224EF 100%;
+  --gradient-61: 45deg, #AD00FE 0%, #00E0EE 100%;
+  --gradient-62: 135deg, #89F7FE 0%, #66A6FF 100%;
+  --gradient-63: 0deg, #009EFD -30.65%, #2AF598 100%;
+  --gradient-64: 45deg, #FFB800 0%, #FFF500 100%;
+  --gradient-65: 135deg, #FFA8A8 0%, #FCFF00 100%;
+  --gradient-66: 45deg, #FF7A00 0%, #FFD439 100%;
+  --gradient-67: 135deg, #FFD3A5 0%, #FD6585 100%;
+  --gradient-68: 180deg, #F9D423 0%, #E14FAD 100%;
+  --gradient-69: 135deg, #F74FAC 0%, #FCB24F 100%;
+  --gradient-70: 135deg, #F49062 0%, #FD371F 100%;
+  --gradient-71: 45deg, #FF6C6C 0%, #DD7BFF 100%;
+  --gradient-72: 135deg, #F97794 0%, #623AA2 100%;
+  --gradient-73: 180deg, #C569CF 0%, #EE609C 100%;
+  --gradient-74: 0deg, #C7EAFD 0%, #E8198B 100%;
+  --gradient-75: 135deg, #F093FB 0%, #F5576C 100%;
+  --gradient-76: 135deg, #F6CEEC 0%, #D939CD 100%;
+  --gradient-77: 135deg, #EE9AE5 0%, #5961F9 100%;
+  --gradient-78: 270deg, #6A11CB 0%, #2575FC 100%;
+  --gradient-79: 45deg, #0017E4 0%, #3793FF 100%;
+  --gradient-80: 0deg, #00C6FB 0%, #005BEA 100%;
+  --gradient-81: 45deg, #4B73FF 0%, #7CF7FF 100%;
+  --gradient-82: 135deg, #5EFCE8 0%, #736EFE 100%;
+  --gradient-83: 0deg, #7028E4 0%, #E5B2CA 100%;
+  --gradient-84: 90deg, #7873F5 0%, #EC77AB 100%;
+  --gradient-85: 135deg, #B01EFF 0%, #E1467C 100%;
+  --gradient-86: 45deg, #D079EE 0%, #8A88FB 100%;
+  --gradient-87: 135deg, #C99FFF 0%, #981ED2 100%;
+  --gradient-88: 0deg, #9B23EA 0%, #5F72BD 100%;
+  --gradient-89: 135deg, #B39FFF 0%, #6A1ED2 100%;
+  --gradient-90: 45deg, #4300B1 0%, #A531DC 100%;
+  --gradient-91: 315deg, #764BA2 0%, #667EEA 100%;
+
+
+
+}
