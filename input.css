@@ -1,7 +1,9 @@
+/*Here you should import the font family*/
+/*@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");*/
+
 @import "tailwindcss";
 
 @theme {
-
   /***********************/
   /* Spacing */
   /***********************/
@@ -64,8 +66,20 @@
 
 
   /***********************/
+  /***********************/
+  /* PRIMITIVES VARIABLES */
+  /***********************/
+  /***********************/
+
+  /***********************/
   /* Colors */
   /***********************/
+
+  /*Base Colors*/
+  --color-base-white: #FFFFFF;
+  --color-base-black: #000000;
+  --color-base-transparent: #ffffff00;
+
 
   /*Brand colors*/
   --color-brand-25: #F5FEFF;
@@ -81,19 +95,59 @@
   --color-brand-900: #164C63;
   --color-brand-950: #0D2D3A;
 
-  /*Gray Colors*/
-  --color-gray-25: #FCFCFD;
-  --color-gray-50: #F9FAFB;
-  --color-gray-100: #F2F4F7;
-  --color-gray-200: #EAECF0;
-  --color-gray-300: #D0D5DD;
-  --color-gray-400: #98A2B3;
-  --color-gray-500: #667085;
-  --color-gray-600: #475467;
-  --color-gray-700: #344054;
-  --color-gray-800: #182230;
-  --color-gray-900: #101828;
-  --color-gray-950: #0C111D;
+  /*Gray Light Mode Colors*/
+  --color-gray-light-25: #FDFDFD;
+  --color-gray-light-50: #FAFAFA;
+  --color-gray-light-100: #F5F5F5;
+  --color-gray-light-200: #E9EAEB;
+  --color-gray-light-300: #D5D7DA;
+  --color-gray-light-400: #A4A7AE;
+  --color-gray-light-500: #717680;
+  --color-gray-light-600: #535862;
+  --color-gray-light-700: #414651;
+  --color-gray-light-800: #252B37;
+  --color-gray-light-900: #181D27;
+  --color-gray-light-950: #0A0D12;
+
+  /*Gray Light Mode Colors*/
+  --color-gray-dark-25: #FAFAFA;
+  --color-gray-dark-50: #F7F7F7;
+  --color-gray-dark-100: #F0F0F1;
+  --color-gray-dark-200: #ECECED;
+  --color-gray-dark-300: #CECFD2;
+  --color-gray-dark-400: #94979C;
+  --color-gray-dark-500: #85888E;
+  --color-gray-dark-600: #61656C;
+  --color-gray-dark-700: #373A41;
+  --color-gray-dark-800: #22262F;
+  --color-gray-dark-900: #13161B;
+  --color-gray-dark-950: #0C0E12;
+
+  /*Gray dark mode alpha*/
+  --color-gray-dark-alpha-25: #FFFFFFFA;
+  /* 98% */
+  --color-gray-dark-alpha-50: #FFFFFFF5;
+  /* 96% */
+  --color-gray-dark-alpha-100: #FFFFFFF0;
+  /* 94% */
+  --color-gray-dark-alpha-200: #FFFFFFEB;
+  /* 92% */
+  --color-gray-dark-alpha-300: #FFFFFFCC;
+  /* 80% */
+  --color-gray-dark-alpha-400: #FFFFFF8F;
+  /* 56% */
+  --color-gray-dark-alpha-500: #FFFFFF80;
+  /* 50% */
+  --color-gray-dark-alpha-600: #FFFFFF59;
+  /* 35% */
+  --color-gray-dark-alpha-700: #FFFFFF29;
+  /* 16% */
+  --color-gray-dark-alpha-800: #FFFFFF14;
+  /* 8% */
+  --color-gray-dark-alpha-900: #FFFFFF0A;
+  /* 4% */
+  --color-gray-dark-alpha-950: #FFFFFF00;
+  /* 0% */
 
   /*Error Colors*/
   --color-error-25: #FFFBFA;
@@ -232,4 +286,243 @@
 
 
 
+
+
+  /***********************/
+  /***********************/
+  /* TOKENS VARIABLES */
+  /***********************/
+  /***********************/
+
+
+  /* Text Tokens - Light Mode */
+  --color-text-primary: var(--color-gray-light-900);
+  --color-text-primary-on-brand: var(--color-base-white);
+  --color-text-secondary: var(--color-gray-light-700);
+  --color-text-secondary-hover: var(--color-gray-light-800);
+  --color-text-secondary-on-brand: var(--color-brand-200);
+  --color-text-tertiary: var(--color-gray-light-600);
+  --color-text-tertiary-hover: var(--color-gray-light-700);
+  --color-text-tertiary-on-brand: var(--color-brand-200);
+  --color-text-quaternary: var(--color-gray-light-500);
+  --color-text-quaternary-on-brand: var(--color-brand-300);
+  --color-text-white: var(--color-base-white);
+  --color-text-disabled: var(--color-gray-light-500);
+  --color-text-placeholder: var(--color-gray-light-500);
+  --color-text-placeholder-subtle: var(--color-gray-light-300);
+  --color-text-brand-primary: var(--color-brand-900);
+  --color-text-brand-secondary: var(--color-brand-700);
+  --color-text-brand-tertiary: var(--color-brand-600);
+  --color-text-brand-tertiary-alt: var(--color-brand-600);
+  --color-text-error-primary: var(--color-error-600);
+  --color-text-warning-primary: var(--color-warning-600);
+  --color-text-success-primary: var(--color-success-600);
+
+  /* Border Tokens - Light Mode */
+  --color-border-primary: var(--color-gray-light-300);
+  --color-border-secondary: var(--color-gray-light-200);
+  --color-border-tertiary: var(--color-gray-light-100);
+  --color-border-disabled: var(--color-gray-light-300);
+  --color-border-disabled-subtle: var(--color-gray-light-200);
+  --color-border-brand: var(--color-brand-500);
+  --color-border-brand-alt: var(--color-brand-600);
+  --color-border-error: var(--color-error-500);
+  --color-border-error-subtle: var(--color-error-300);
+
+  /* Foreground Tokens - Light Mode */
+  --color-fg-primary: var(--color-gray-light-900);
+  --color-fg-secondary: var(--color-gray-light-700);
+  --color-fg-secondary-hover: var(--color-gray-light-800);
+  --color-fg-tertiary: var(--color-gray-light-600);
+  --color-fg-tertiary-hover: var(--color-gray-light-700);
+  --color-fg-quaternary: var(--color-gray-light-500);
+  --color-fg-quaternary-hover: var(--color-gray-light-600);
+  --color-fg-quinary: var(--color-gray-light-400);
+  --color-fg-quinary-hover: var(--color-gray-light-500);
+  --color-fg-senary: var(--color-gray-light-300);
+  --color-fg-white: var(--color-base-white);
+  --color-fg-disabled: var(--color-gray-light-400);
+  --color-fg-disabled-subtle: var(--color-gray-light-300);
+  --color-fg-brand-primary: var(--color-brand-600);
+  --color-fg-brand-primary-alt: var(--color-brand-600);
+  --color-fg-brand-secondary: var(--color-brand-500);
+  --color-fg-error-primary: var(--color-error-600);
+  --color-fg-error-secondary: var(--color-error-500);
+  --color-fg-warning-primary: var(--color-warning-600);
+  --color-fg-warning-secondary: var(--color-warning-500);
+  --color-fg-success-primary: var(--color-success-600);
+  --color-fg-success-secondary: var(--color-success-500);
+
+  /* Background Tokens - Light Mode */
+  --color-bg-primary: var(--color-base-white);
+  --color-bg-primary-alt: var(--color-base-white);
+  --color-bg-primary-hover: var(--color-gray-light-50);
+  --color-bg-primary-solid: var(--color-gray-light-950);
+  --color-bg-secondary: var(--color-gray-light-50);
+  --color-bg-secondary-alt: var(--color-gray-light-50);
+  --color-bg-secondary-hover: var(--color-gray-light-100);
+  --color-bg-secondary-subtle: var(--color-gray-light-25);
+  --color-bg-secondary-solid: var(--color-gray-light-600);
+  --color-bg-tertiary: var(--color-gray-light-100);
+  --color-bg-quaternary: var(--color-gray-light-200);
+  --color-bg-active: var(--color-gray-light-50);
+  --color-bg-disabled: var(--color-gray-light-100);
+  --color-bg-disabled-subtle: var(--color-gray-light-50);
+  --color-bg-overlay: var(--color-gray-light-950);
+  --color-bg-brand-primary: var(--color-brand-500);
+  --color-bg-brand-primary-alt: var(--color-gray-light-50);
+  --color-bg-brand-secondary: var(--color-brand-100);
+  --color-bg-brand-solid: var(--color-brand-600);
+  --color-bg-brand-solid-hover: var(--color-brand-700);
+  --color-bg-brand-section: var(--color-brand-800);
+  --color-bg-brand-section-subtle: var(--color-brand-700);
+  --color-bg-error-primary: var(--color-error-50);
+  --color-bg-error-secondary: var(--color-error-100);
+  --color-bg-error-solid: var(--color-error-600);
+  --color-bg-warning-primary: var(--color-warning-50);
+  --color-bg-warning-secondary: var(--color-warning-100);
+  --color-bg-warning-solid: var(--color-warning-600);
+  --color-bg-success-primary: var(--color-success-50);
+  --color-bg-success-secondary: var(--color-success-100);
+  --color-bg-success-solid: var(--color-success-600);
+
+  /***********************/
+  /* Shadows - Light Mode */
+  /***********************/
+  --shadow-xs: 0 1px 2px 0 rgba(10, 13, 18, 0.05);
+  --shadow-sm-01: 0 2px 4px 0 rgba(10, 13, 18, 0.10);
+  --shadow-sm-02: 0 2px 6px 0 rgba(10, 13, 18, 0.10);
+  --shadow-md-01: 0 4px 6px 0 rgba(10, 13, 18, 0.10);
+  --shadow-md-02: 0 4px 8px 0 rgba(10, 13, 18, 0.06);
+  --shadow-lg-01: 0 6px 10px 0 rgba(10, 13, 18, 0.08);
+  --shadow-lg-02: 0 8px 12px 0 rgba(10, 13, 18, 0.03);
+  --shadow-lg-03: 0 8px 14px 0 rgba(10, 13, 18, 0.04);
+  --shadow-xl-01: 0 10px 16px 0 rgba(10, 13, 18, 0.08);
+  --shadow-xl-02: 0 12px 18px 0 rgba(10, 13, 18, 0.03);
+  --shadow-xl-03: 0 14px 20px 0 rgba(10, 13, 18, 0.04);
+  --shadow-2xl-01: 0 16px 24px 0 rgba(10, 13, 18, 0.18);
+  --shadow-2xl-02: 0 18px 28px 0 rgba(10, 13, 18, 0.04);
+  --shadow-3xl-01: 0 20px 32px 0 rgba(10, 13, 18, 0.14);
+  --shadow-3xl-02: 0 22px 36px 0 rgba(10, 13, 18, 0.04);
+  --shadow-skeuomorphic-inset-01: inset 0 1px 2px 0 rgba(12, 14, 18, 0.05);
+  --shadow-skeuomorphic-inset-02: inset 0 4px 8px 0 rgba(12, 14, 18, 0.18);
+}
+
+[data-theme="dark"] {
+  /* Text Tokens - Dark Mode */
+  --color-text-primary: var(--color-gray-dark-50);
+  --color-text-primary-on-brand: var(--color-gray-dark-50);
+  --color-text-secondary: var(--color-gray-dark-300);
+  --color-text-secondary-hover: var(--color-gray-dark-200);
+  --color-text-secondary-on-brand: var(--color-gray-dark-300);
+  --color-text-tertiary: var(--color-gray-dark-400);
+  --color-text-tertiary-hover: var(--color-gray-dark-300);
+  --color-text-tertiary-on-brand: var(--color-gray-dark-400);
+  --color-text-quaternary: var(--color-gray-dark-400);
+  --color-text-quaternary-on-brand: var(--color-gray-dark-400);
+  --color-text-white: var(--color-base-white);
+  --color-text-disabled: var(--color-gray-dark-500);
+  --color-text-placeholder: var(--color-gray-dark-500);
+  --color-text-placeholder-subtle: var(--color-gray-dark-700);
+  --color-text-brand-primary: var(--color-brand-900);
+  --color-text-brand-secondary: var(--color-brand-700);
+  --color-text-brand-tertiary: var(--color-brand-600);
+  --color-text-brand-tertiary-alt: var(--color-gray-dark-50);
+  --color-text-error-primary: var(--color-error-400);
+  --color-text-warning-primary: var(--color-warning-400);
+  --color-text-success-primary: var(--color-success-400);
+
+  /* Border Tokens - Dark Mode */
+  --color-border-primary: var(--color-gray-dark-700);
+  --color-border-secondary: var(--color-gray-dark-800);
+  --color-border-tertiary: var(--color-gray-dark-800);
+  --color-border-disabled: var(--color-gray-dark-700);
+  --color-border-disabled-subtle: var(--color-gray-dark-800);
+  --color-border-brand: var(--color-brand-400);
+  --color-border-brand-alt: var(--color-gray-dark-700);
+  --color-border-error: var(--color-error-400);
+  --color-border-error-subtle: var(--color-error-400);
+
+
+  /* Foreground Tokens - Dark Mode */
+  --color-fg-primary: var(--color-base-white);
+  --color-fg-secondary: var(--color-gray-dark-300);
+  --color-fg-secondary-hover: var(--color-gray-dark-200);
+  --color-fg-tertiary: var(--color-gray-dark-400);
+  --color-fg-tertiary-hover: var(--color-gray-dark-300);
+  --color-fg-quaternary: var(--color-gray-dark-400);
+  --color-fg-quaternary-hover: var(--color-gray-dark-300);
+  --color-fg-quinary: var(--color-gray-dark-500);
+  --color-fg-quinary-hover: var(--color-gray-dark-400);
+  --color-fg-senary: var(--color-gray-dark-600);
+  --color-fg-white: var(--color-base-white);
+  --color-fg-disabled: var(--color-gray-dark-500);
+  --color-fg-disabled-subtle: var(--color-gray-dark-600);
+  --color-fg-brand-primary: var(--color-brand-500);
+  --color-fg-brand-primary-alt: var(--color-gray-dark-300);
+  --color-fg-brand-secondary: var(--color-brand-500);
+  --color-fg-error-primary: var(--color-error-500);
+  --color-fg-error-secondary: var(--color-error-400);
+  --color-fg-warning-primary: var(--color-warning-500);
+  --color-fg-warning-secondary: var(--color-warning-400);
+  --color-fg-success-primary: var(--color-success-500);
+  --color-fg-success-secondary: var(--color-success-400);
+
+  /* Background Tokens - Dark Mode */
+  --color-bg-primary: var(--color-gray-dark-950);
+  --color-bg-primary-alt: var(--color-bg-secondary);
+  --color-bg-primary-hover: var(--color-gray-dark-800);
+  --color-bg-primary-solid: var(--color-bg-secondary);
+  --color-bg-secondary: var(--color-gray-dark-900);
+  --color-bg-secondary-alt: var(--color-bg-primary);
+  --color-bg-secondary-hover: var(--color-gray-dark-800);
+  --color-bg-secondary-subtle: var(--color-gray-dark-900);
+  --color-bg-secondary-solid: var(--color-gray-dark-600);
+  --color-bg-tertiary: var(--color-gray-dark-800);
+  --color-bg-quaternary: var(--color-gray-dark-700);
+  --color-bg-active: var(--color-gray-dark-800);
+  --color-bg-disabled: var(--color-gray-dark-800);
+  --color-bg-disabled-subtle: var(--color-gray-dark-900);
+  --color-bg-overlay: var(--color-gray-dark-800);
+  --color-bg-brand-primary: var(--color-brand-500);
+  --color-bg-brand-primary-alt: var(--color-bg-secondary);
+  --color-bg-brand-secondary: var(--color-brand-600);
+  --color-bg-brand-solid: var(--color-brand-600);
+  --color-bg-brand-solid-hover: var(--color-brand-500);
+  --color-bg-brand-section: var(--color-bg-secondary);
+  --color-bg-brand-section-subtle: var(--color-bg-primary);
+  --color-bg-error-primary: var(--color-error-500);
+  --color-bg-error-secondary: var(--color-error-600);
+  --color-bg-error-solid: var(--color-error-600);
+  --color-bg-warning-primary: var(--color-warning-500);
+  --color-bg-warning-secondary: var(--color-warning-600);
+  --color-bg-warning-solid: var(--color-warning-600);
+  --color-bg-success-primary: var(--color-success-500);
+  --color-bg-success-secondary: var(--color-success-600);
+  --color-bg-success-solid: var(--color-success-600);
+
+  /***********************/
+  /* Shadows - Dark Mode */
+  /***********************/
+  --shadow-xs: 0 1px 2px 0 rgba(12, 14, 18, 0.05);
+  --shadow-sm-01: 0 2px 4px 0 rgba(12, 14, 18, 0.10);
+  --shadow-sm-02: 0 2px 6px 0 rgba(12, 14, 18, 0.10);
+  --shadow-md-01: 0 4px 6px 0 rgba(12, 14, 18, 0.10);
+  --shadow-md-02: 0 4px 8px 0 rgba(12, 14, 18, 0.06);
+  --shadow-lg-01: 0 6px 10px 0 rgba(12, 14, 18, 0.08);
+  --shadow-lg-02: 0 8px 12px 0 rgba(12, 14, 18, 0.03);
+  --shadow-lg-03: 0 8px 14px 0 rgba(12, 14, 18, 0.04);
+  --shadow-xl-01: 0 10px 16px 0 rgba(12, 14, 18, 0.08);
+  --shadow-xl-02: 0 12px 18px 0 rgba(12, 14, 18, 0.03);
+  --shadow-xl-03: 0 14px 20px 0 rgba(12, 14, 18, 0.04);
+  --shadow-2xl-01: 0 16px 24px 0 rgba(12, 14, 18, 0.18);
+  --shadow-2xl-02: 0 18px 28px 0 rgba(12, 14, 18, 0.04);
+  --shadow-3xl-01: 0 20px 32px 0 rgba(12, 14, 18, 0.14);
+  --shadow-3xl-02: 0 22px 36px 0 rgba(12, 14, 18, 0.04);
+  --shadow-skeuomorphic-inset-01: inset 0 1px 2px 0 rgba(12, 14, 18, 0.05);
+  --shadow-skeuomorphic-inset-02: inset 0 4px 8px 0 rgba(12, 14, 18, 0.18);
+}
+
+body {
+  font-family: var(--font-sans);
 }
